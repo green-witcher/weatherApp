@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="background">
+        <div class="title">
+            <h1>5 Day Weather Forecast</h1>
+        </div>
+        <div class="container">
+            <div class="weatherBox" id="weatherBox">
+                <div class="search">
+                    <input type="text" placeholder="Enter City Name" class="cityInput">    
+                    <button class="cityButton" onclick="searchCity()">Search</button>            
+                </div>
+                <!-- Rest of your weather box content -->
+                <div class="mainWeather" id="mainWeather">
+                   
+                     <!-- Weather information content -->
+                     <div class="weatherInfos">
+                        <h2 class="date" id="mainDate">Date</h2>
+                        <h2 class="city">City Name</h2>
+                        <h3 >Temperature <br><span class="celcius"> C</span></h3>
+                        <h4 class="weatherDesc"></h4>
+                        <div class="details">
+                            <p >Feels Like <span class="feelLike">F L</span></p>
+                            <p >Humidity <span class="humidity"> H</span></p>
+                            <p >Wind Speed <span class="windSpeed"> W</span></p>
+                            <p >Pressure <span class="pressure"> P</span></p>
+                        </div>
+                    </div>
+                    <div class="nextDatas">
+                        <div class="day">
+                            <h2 class="date2">Date</h2>
+                            <h3 >Temperature <br><span class="celcius2"> C</span></h3>
+                            <h4 class="weatherDesc2"></h4>
+                            <div class="details">
+                                <p >Feels Like <span class="feelLike2">F L</span></p>
+                                <p >Humidity <span class="humidity2"> H</span></p>
+                                <p >Wind Speed <span class="windSpeed2"> W</span></p>
+                                <p >Pressure <span class="pressure2"> P</span></p>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <h2 class="date3">Date</h2>
+                            <h3 >Temperature <br> <span class="celcius3"> C</span></h3>
+                            <h4 class="weatherDesc3"></h4>
+                            <div class="details">
+                                <p >Feels Like <span class="feelLike3">F L</span></p>
+                                <p >Humidity <span class="humidity3"> H</span></p>
+                                <p >Wind Speed <span class="windSpeed3"> W</span></p>
+                                <p >Pressure <span class="pressure3"> P</span></p>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <h2 class="date4">Date</h2>
+                            <h3 >Temperature <br><span class="celcius4"> C</span></h3>
+                            <h4 class="weatherDesc4"></h4>
+                            <div class="details">
+                                <p >Feels Like <span class="feelLike4">F L</span></p>
+                                <p >Humidity <span class="humidity4"> H</span></p>
+                                <p >Wind Speed <span class="windSpeed4"> W</span></p>
+                                <p >Pressure <span class="pressure4"> P</span></p>
+                            </div>
+                        </div>
+                        <div class="day">
+                            <h2 class="date5">Date</h2>
+                            <h3 >Temperature <br> <span class="celcius5"> C</span></h3>
+                            <h4 class="weatherDesc5"></h4>
+                            <div class="details">
+                                <p >Feels Like <span class="feelLike5">F L</span></p>
+                                <p >Humidity <span class="humidity5"> H</span></p>
+                                <p >Wind Speed <span class="windSpeed5"> W</span></p>
+                                <p >Pressure <span class="pressure5"> P</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./weather.js"></script>
+</body>
+</html>

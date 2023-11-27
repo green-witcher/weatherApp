@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: url('pagebg.jpg') no-repeat fixed;
+    background-size: cover;
+}
+
+.title h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; 
+}
+
+
+.weatherBox {
+    text-align: center;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #f1f1f1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: height 0.3s ease; 
+}
+
+.weatherBox.collapsed {
+    height: 90px; 
+}
+
+.weatherBox .search button:hover {
+    background-color: #a1a3a2;
+}
+
+.weatherBox .search {
+    padding-bottom: 30px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherBox .search input {
+    border: 0;
+    outline: 0;
+    flex: 1;
+    margin-right: 10px;
+    font-style: 18px;
+    background: #f1f1f1;
+    color: black;
+}
+
+.weatherBox .search {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.weatherBox .mainWeather {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weatherBox .weatherInfos {
+    width: 40%;
+}
+
+.weatherBox .weatherInfos .city {
+    font-size: 40px;
+}
+
+.weatherBox .weatherInfos h3 {
+    font-size: 30px;
+}
+
+.weatherBox .weatherInfos h3 span {
+    font-size: 50px;
+    font-weight: 600;
+    color: orange;
+    position: relative;
+}
+
+.weatherBox .weatherInfos .details {
+    font-size: 18px;
+    padding: 15px;
+}
+
+.weatherBox .weatherInfos .details span {
+    font-size: 16px;
+    font-weight: 300;
+    color: aquamarine;
+}
+
+.weatherBox .nextDatas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    grid-gap: 10px;
+}
+
+.weatherBox .nextDatas .day {
+    width: 50%;
+    border-radius: 15px;
+    border: 1px solid #f1f1f1;
+    padding: 15px 0;
+    margin: 10px 0;
+}
+
+.weatherBox .nextDatas .day h2 {
+    font-size: 15px;
+    color: cyan;
+    padding-bottom: 15px;
+}
+
+#mainDate {
+    color: cyan;
+}
+
+.weatherBox .nextDatas .day h3 {
+    font-size: 18px;
+}
+
+.weatherBox .nextDatas .day h3 span {
+    color: orange;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.weatherBox .nextDatas .day h4 {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.weatherBox .nextDatas .day .details {
+    font-size: 13px;
+}
+
+.weatherBox .nextDatas .day .details p span {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.cityInput {
+    padding: 8px;
+}
+
+.cityButton {
+    padding: 8px;
+}
